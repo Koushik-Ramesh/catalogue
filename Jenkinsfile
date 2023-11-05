@@ -15,6 +15,6 @@ pipeline {
                 sh "echo Generating Artifacts"
                 sh "npm install"
             }
-        }
+        }
     }
 }
