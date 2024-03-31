@@ -1,4 +1,4 @@
 app:
-    source:  "https://github.com/Koushik-Ramesh/tf-module-mutable.git"
+    source:  "https://github.com/Koushik-Ramesh/tf-module-mutable-catalogue.git"
     version: "main"
 
