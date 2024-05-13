@@ -74,5 +74,5 @@ spec:
   - type: Resource
     resource:
       name: cpu
-      targetCPUUtilizationPercentage: 75   # Target average CPU utilization percentage
+      targetUtilization: 75   # Target average CPU utilization percentage
 
