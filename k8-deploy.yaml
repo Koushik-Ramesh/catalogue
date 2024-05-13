@@ -72,7 +72,7 @@ spec:
   maxReplicas: 10     # Maximum number of replicas
   metrics:
   - type: Resource
-    resources:
+    resource:
       name: cpu
       targetCPUUtilizationPercentage: 75   # Target average CPU utilization percentage
 
