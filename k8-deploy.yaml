@@ -6,7 +6,7 @@ metadata:
   labels:
     app: catalogue
 spec:
-  replicas: 2
+  replicas: 1
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -41,7 +41,7 @@ kind: ConfigMap
 metadata:
   name: catalogue-configmap
 data:
-  MONGO_URL: "mongodb://admin1:<roboshop1>@roboshop-dev-docdb.cni2x2uz4mfb.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&retryWrites=false"
+  MONGO_URL: "mongodb://admin1:roboshop1@roboshop-dev-docdb.cluster-cni2x2uz4mfb.us-east-1.docdb.amazonaws.com:27017/?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
 
 ---
 
