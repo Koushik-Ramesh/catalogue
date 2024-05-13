@@ -59,10 +59,10 @@ spec:
 
 ---
 # AutoScaling
-apiVersion: autoscaling/v1
+apiVersion: autoscaling/v2beta1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: catalogue-autoscaler
+  name: catalogue-hpa
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
